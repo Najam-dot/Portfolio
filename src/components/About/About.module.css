@@ -1,0 +1,141 @@
+.About {
+  background-color: #040221;
+  padding-top: 197px;
+  padding-bottom: 140px;
+}
+.About .AboutWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.About .AboutText {
+  padding-top: 108px;
+  max-width: 846px;
+  width: 100%;
+}
+
+.About .AboutText h2 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 108px;
+  color: #fff;
+  padding-bottom: 77px;
+}
+
+.About .AboutText p {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 55px;
+  color: #fff;
+}
+
+.About .AboutText p:nth-child(2) {
+  padding-bottom: 51px;
+}
+
+.About .AboutText p:nth-child(3) {
+  padding-bottom: 165px;
+}
+
+.About .AboutText a {
+  padding: 28px 60px;
+  font-family: "Raleway";
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 40px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 60px;
+}
+.About .AboutText a:hover {
+  background-color: #ff0513;
+  border: 2px solid #ff0513;
+}
+.About .AboutImage img {
+  width: auto;
+}
+
+/* @media Media Queries */
+@media screen and (max-width: 1600px) {
+  .About {
+    padding: 120px 0px;
+  }
+  .About .AboutWrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .About .AboutText {
+    max-width: 48%;
+    width: 100%;
+  }
+  .About .AboutText {
+    padding-top: 50px;
+  }
+  .AboutImage {
+    max-width: 40%;
+    width: 100%;
+  }
+  .About .AboutImage img {
+    width: 100%;
+  }
+  .About .AboutText h2 {
+    padding-bottom: 10px;
+    font-size: 50px;
+    line-height: 63px;
+  }
+  .About .AboutText p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .About .AboutText p:last-child {
+    padding-top: 15px;
+  }
+  .About .AboutText p:nth-child(3) {
+    padding-bottom: 52px;
+  }
+  .About .AboutText a {
+    font-size: 22px;
+    padding: 12px 22px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .About {
+    padding: 60px 0px;
+  }
+  .About .AboutText {
+    padding-top: 25px;
+  }
+  .About .AboutText p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .About .AboutText p:nth-child(2) {
+    padding-bottom: 20px;
+  }
+  .About .AboutText p:nth-child(3) {
+    padding-bottom: 26px;
+  }
+  .About .AboutText a {
+    font-size: 15px;
+    padding: 0px 15px;
+  }
+  .About .AboutText h2 {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .About .AboutWrap {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .About .AboutText {
+    max-width: 80%;
+    width: 100%;
+  }
+  .About .AboutImage {
+    max-width: 80%;
+    width: 100%;
+  }
+}

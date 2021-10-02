@@ -1,0 +1,146 @@
+.Header {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+}
+.HeaderWrap {
+  display: flex;
+  justify-content: space-between;
+}
+.HeaderWrap ul {
+  display: flex;
+}
+.HeaderWrap li {
+  padding: 63px 33px 25px 33px;
+}
+.HeaderWrap li:hover {
+  background-color: #ff0513;
+  position: relative;
+  transition: all 1s ease-out;
+}
+.HeaderWrap li:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 1px;
+  background-color: #ff0513;
+  top: 130px;
+}
+.HeaderWrap li:last-child {
+  margin-left: 33px;
+  margin-top: 42px;
+  padding: 16px 36px;
+  border: 2px solid #ffffff;
+  border-radius: 60px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+.HeaderWrap li:last-child:hover {
+  border: 2px solid #ff0513;
+}
+.HeaderWrap li:last-child:hover::after {
+  display: none;
+}
+.Header li a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 22px;
+  color: #fff;
+}
+
+#toggle {
+  width: 28px;
+  height: 30px;
+  margin: 10px 0 10px auto;
+  display: none;
+}
+
+#toggle div {
+  width: 100%;
+  height: 5px;
+  background: white;
+  margin: 4px auto;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+}
+
+/* Media Queries */
+@media (max-width: 1600px) {
+  .logo {
+    max-width: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo img {
+    width: 100%;
+  }
+  .HeaderWrap li {
+    padding: 0px 26px 0px 0px;
+  }
+  .HeaderWrap ul {
+    align-items: center;
+  }
+  .HeaderWrap li:last-child {
+    margin-left: 33px;
+    padding: 0px 16px;
+    border: 2px solid #ffffff;
+    border-radius: 60px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+  }
+  .HeaderWrap {
+    padding: 10px 0px;
+  }
+}
+@media (max-width: 1366px) {
+  .HeaderWrap li:last-child {
+    padding: 0px 12px;
+    height: 48px;
+  }
+  .Header li a {
+    font-size: 19px;
+  }
+}
+@media (max-width: 991px) {
+  #toggle {
+    display: block;
+  }
+  .HeaderWrap {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  .HeaderWrap ul {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: 1s ease-in-out;
+    width: 100%;
+    visibility: hidden;
+    height: 0;
+  }
+  .show li {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+  }
+  .HeaderWrap li {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .HeaderWrap li:last-child {
+    margin-top: 20px;
+  }
+  .HeaderWrap li a {
+    text-align: center;
+  }
+}

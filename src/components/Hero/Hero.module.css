@@ -1,0 +1,162 @@
+.heroSection {
+  position: relative;
+  background-image: url(../../assets/images/BannerImage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 182px;
+}
+
+.heroWrap {
+  padding-top: 350px;
+}
+
+.heroSection h6 {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 41px;
+  line-height: 54px;
+  color: #fff;
+}
+
+.heroSection h1 {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 150px;
+  line-height: 146px;
+  color: #fff;
+  margin-left: -5px;
+}
+
+.heroSection p {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 35px;
+  color: #fff;
+  margin-bottom: 39px;
+}
+
+.heroSection p span {
+  color: #ff0513;
+}
+
+.heroSection h5 {
+  font-family: "Raleway";
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 40px;
+  color: #fff;
+  padding-bottom: 24px;
+}
+
+.heroSection ul {
+  display: flex;
+  margin-bottom: 69px;
+}
+
+.heroSection ul li {
+  margin-right: 33px;
+}
+
+.heroSection ul li:last-child {
+  margin-right: 0;
+}
+.heroSection .ButtonsWrap ul {
+  display: flex;
+  margin-bottom: 0;
+}
+.heroSection .ButtonsWrap ul li {
+  padding: 36px 86px;
+  border: 1px solid #fff;
+  border-radius: 60px;
+  margin-right: 26px;
+}
+.heroSection .ButtonsWrap ul li:last-child {
+  margin-right: 0;
+}
+.heroSection .ButtonsWrap ul li:hover {
+  background-color: #ff0513;
+  border: 1px solid #ff0513;
+}
+.heroSection .ButtonsWrap ul a {
+  font-family: "Raleway";
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 40px;
+  color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 1600px) {
+  .heroSection h1 {
+    font-size: 120px;
+  }
+  .heroWrap {
+    padding-top: 152px;
+  }
+  .heroSection .ButtonsWrap ul li {
+    padding: 11px 31px;
+  }
+  .heroSection li img {
+    height: 32px;
+  }
+  .heroSection p {
+    font-size: 21px;
+  }
+}
+@media (max-width: 1366px) {
+  .heroSection h1 {
+    font-size: 81px;
+    line-height: 90px;
+  }
+  .heroSection p {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .heroSection h6 {
+    font-size: 33px;
+  }
+  .heroSection li img {
+    height: 23px;
+  }
+  .heroSection .ButtonsWrap ul li {
+    padding: 4px 26px;
+  }
+  .heroSection .ButtonsWrap ul a {
+    font-size: 22px;
+  }
+  .heroSection ul {
+    margin-bottom: 29px;
+  }
+  .heroSection {
+    padding-bottom: 110px;
+  }
+}
+@media (max-width: 640px) {
+  .heroSection h1 {
+    font-size: 53px;
+    line-height: 62px;
+  }
+  .heroSection h6 {
+    font-size: 20px;
+  }
+  .heroSection p {
+    margin: 10px 0px;
+    font-size: 16px;
+  }
+  .heroSection h5 {
+    font-size: 19px;
+  }
+  .heroSection .ButtonsWrap ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .heroSection .ButtonsWrap ul li {
+    margin-right: 0;
+    margin-bottom: 15px;
+    padding: 0px 23px;
+  }
+  .heroSection .ButtonsWrap ul a {
+    font-size: 14px;
+  }
+}
